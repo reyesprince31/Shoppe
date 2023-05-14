@@ -1,0 +1,179 @@
+/* General styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5rem;   
+}
+
+header, .navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Header styles */
+.navigation {
+    width: 600px;
+    align-items: center;
+    
+}
+
+.first-letter, .link:hover, .icon-container:hover {
+    color:goldenrod;
+}
+
+
+.separator {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.logo {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 35px;
+}
+
+/* Main body styles */
+.hero-container {
+    padding-top: 1rem;
+}
+
+.hero-container > img {
+    width: 100%;
+    /* min-width: 400px; */
+}
+
+.shop-division {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* shop grid */
+.item-content {
+    width: 100%;
+}
+
+.item-image > img {
+    width: 100%;
+}
+
+.shop-item {
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+hr {
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-top: 50px;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-map {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link {
+    margin-right: 1rem;
+}
+
+.flex-footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-newsletter {
+    padding: 10px 0;
+    display: flex;
+    flex-basis: 200px;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    width: 30%;
+}
+
+.email-newsletter > input, button {
+    border: none;
+    background: transparent;
+}
+
+.socmed-link {
+    margin-left: 1rem;
+}
+
+
+/* icon material */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+/* Responsive Media */
+
+@media (max-width: 680px) {
+    body {
+        padding: 20px;
+    }
+
+    p {
+        white-space: nowrap;
+        width: 150px; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    
+    }
+    
+    .navigation {
+        visibility: hidden;
+    }
+    
+    .shop-item {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .flex-footer, .site-map {
+        flex-direction: column;
+    }
+
+    .site-map > a, .flex-footer > div {
+        padding: 20px 0;
+    }
+  
+    .email-newsletter {
+        width: 50%;
+        flex-basis: 0;
+        padding: 20px 0;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .lower-footer {
+        text-align: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
